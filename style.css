@@ -112,3 +112,19 @@ ol li:before {
 .container ol li strong{
     color:hsl(24, 5%, 18%)
 }
+
+table tbody tr {
+    border-bottom: 2px solid black;
+  }
+td{
+    padding-left: 50px;
+    padding-right: 150px;
+    padding-top: 15px;
+    padding-top: 15px;
+    font-family: "Outfit", sans-serif;
+}
+
+td.brown{
+    color: #7f4f44;
+    font-weight: 700
+}
