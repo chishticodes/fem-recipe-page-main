@@ -102,12 +102,16 @@ img{
     padding: 8px;
     font-family: "Outfit",sans-serif;
     display: block;
+    position: relative;
 }
 
 ol li:before {
     content: counter(item) ". ";
     counter-increment: item;
     color: #7f4f44;
+    font-weight: 700;
+    position: absolute;
+    left: -15px;
 }
 .container ol li strong{
     color:hsl(24, 5%, 18%)
@@ -117,6 +121,9 @@ table {
   }
 table tbody tr {
     border-bottom: 2px solid hsl(30, 18%, 87%);
+  }
+table tbody tr.final-row {
+    border-bottom: 0;
   }
   
   td {
@@ -140,3 +147,26 @@ table tbody tr {
     margin: 1em 0;
     padding: 0;
   }
+
+
+  @media only screen and (max-width: 375px) {
+    /* body{
+        width: 300px;
+    } */
+    .container{
+        margin: 0;
+        max-width: 375px;
+        padding: 15px;
+    }
+    .container img{
+        width: 345px;
+    }
+    .prep-container{
+        margin:0
+    }
+    td {
+        padding-left: 20px;
+        padding-right: 100px;
+    }
+
+}
